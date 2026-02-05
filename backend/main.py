@@ -75,8 +75,26 @@ def get_status():
                 "reward": f"+{quest_row['stat_reward_value']} {quest_row['stat_reward_type']}",
                 "deadline": quest_row["deadline"]
             }
+            
+        # User Context (Genesis Data)
+        cursor.execute("SELECT grand_goal, shadow_weakness, roadmap_json FROM user_context ORDER BY id DESC LIMIT 1")
+        context_row = cursor.fetchone()
+        context = None
+        if context_row:
+            import json
+            roadmap = {}
+            try:
+                roadmap = json.loads(context_row["roadmap_json"])
+            except:
+                roadmap = {}
+                
+            context = {
+                "grand_goal": context_row["grand_goal"],
+                "shadow_weakness": context_row["shadow_weakness"],
+                "roadmap": roadmap
+            }
         
-        return {"profile": profile, "stats": stats, "quest": quest}
+        return {"profile": profile, "stats": stats, "quest": quest, "context": context}
         
     finally:
         conn.close()
