@@ -1,0 +1,58 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+credentials.json
+token.json
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js / Next.js
+node_modules/
+/.next/
+/out/
+build/
+dist/
+.npm
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Databases (User Data)
+*.db
+*.sqlite
+*.sqlite3
+db/player_stats.db
+db/skills.db
+user_data/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Artifacts & Temporary Files
+*.mp4
+*.avi
+*.mov
+recordings/
+tmp/
