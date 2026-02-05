@@ -5,7 +5,7 @@
 
 ---
 
-### 🏛️ Architecture (The Monarch Stack)
+###  Architecture (The Monarch Stack)
 The system is built on a **Hybrid Agentic Architecture**:
 
 1.  **The Sovereign (`sovereign.py`)**: The central brain. Uses **Gemini 2.5 Flash** with **Thinking Mode** to audit your day and assign XP.
@@ -21,18 +21,18 @@ The system is built on a **Hybrid Agentic Architecture**:
 
 ---
 
-### 🚀 Key Features (Gemini Powered)
--   **🧠 Thinking Mode Audits**: The system doesn't just log stats; it *judges* you. It uses Gemini's reasoning capabilities to determine if your excuses are valid.
--   **🛡️ Vitality Safeguard**: If `Fatigue > Vitality`, the system forces a "Recovery Protocol" (nerfing quest difficulty) to prevent burnout.
--   **🔄 Resilience Protocol**: Implements a "Hydra Strategy" that rotates through `gemini-2.5-flash`, `2.0-flash`, and `lite` to survive Rate Limits.
--   **💬 The Sovereign Interview**: A persistent chat persona that remembers your goals and adapts its tone accordingly.
+### Key Features (Gemini Powered)
+-   **Thinking Mode Audits**: The system doesn't just log stats; it *judges* you. It uses Gemini's reasoning capabilities to determine if your excuses are valid.
+-   ** Vitality Safeguard**: If `Fatigue > Vitality`, the system forces a "Recovery Protocol" (nerfing quest difficulty) to prevent burnout.
+-   ** Resilience Protocol**: Implements a "Hydra Strategy" that rotates through `gemini-2.5-flash`, `2.0-flash`, and `lite` to survive Rate Limits.
+-   ** The Sovereign Interview**: A persistent chat persona that remembers your goals and adapts its tone accordingly.
 
 ---
 
-### 📦 Installation
+### Installation
 **1. Clone the Repository**
 ```bash
-git clone https://github.com/StartYourOwnRepo/shadow-system.git
+git clone https://github.com/ayoubMah/shadow-system.git
 cd shadow-system
 ```
 
@@ -62,7 +62,3 @@ npm run dev
 **4. Access the Dashboard**
 Open `http://localhost:3000`.
 
----
-
-### 🤖 Built with Antigravity
-This entire system was architected and coded using **Google Antigravity**, an advanced agentic coding assistant. It demonstrates the future of "Human-Agent Pair Programming."
